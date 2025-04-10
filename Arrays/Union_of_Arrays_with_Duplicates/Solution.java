@@ -2,16 +2,16 @@
 
 class Solution {
     public static int findUnion(int a[], int b[]) {
-      HashSet<Integer> union = new HashSet<>();
-      
-      for(int i=0;i<a.length;i++){
-        union.add(a[i]);
-      }
-      for(int i=0;i<b.length;i++){
-        union.add(b[i]);
-      }
-     return union.size();
-      
+       Set<Integer> union = new HashSet<>();
+       
+       for(int i: a){
+           union.add(i);
+       }
+       for(int i: b ){
+           union.add(i);
+       }
+       
+       return union.size();
     }
 }
 
